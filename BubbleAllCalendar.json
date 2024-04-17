@@ -1,0 +1,844 @@
+[
+  {
+    "type": "newPage",
+    "config": {}
+  },
+  {
+    "type": "gotoUrl",
+    "config": {
+      "url": "https://bubble.imaginaryones.com/dashboard/farming",
+      "timeout": 30000,
+      "remark": ""
+    }
+  },
+  {
+    "type": "waitForSelector",
+    "config": {
+      "selectorRadio": "CSS",
+      "selector": "#app > div > div > main > section > div > div.dashboard-page__header > div.title",
+      "serial": 1,
+      "isShow": "1",
+      "timeout": 30000,
+      "variable": "",
+      "remark": ""
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 3000,
+      "timeoutMax": 6000,
+      "remark": ""
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 10,
+      "distance": 1369,
+      "type": "smooth",
+      "scrollType": "pixel",
+      "position": "middle",
+      "remark": ""
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 1000,
+      "timeoutMax": 3000,
+      "remark": ""
+    }
+  },
+  {
+    "type": "passingElement",
+    "config": {
+      "selectorRadio": "XPath",
+      "selector": "//*[@id=\"app\"]/div/div/main/section/div/div[2]/section[2]/div/div[1]/div[2]/button/span[3]",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "remark": "Calendar"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 500,
+      "timeoutMax": 1000,
+      "remark": ""
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "XPath",
+      "selector": "//*[@id=\"app\"]/div/div/main/section/div/div[2]/section[2]/div/div[1]/div[2]/button/span[3]",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "click calendar"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 2000,
+      "timeoutMax": 5000,
+      "remark": ""
+    }
+  },
+  {
+    "type": "getElement",
+    "config": {
+      "selectorRadio": "CSS",
+      "selector": "[aria-label*=\"2024年4月\"].unclaimed",
+      "serial": 1,
+      "selectorType": "selector",
+      "serialType": "fixedValue",
+      "serialMin": 1,
+      "serialMax": 50,
+      "element": "",
+      "type": "object",
+      "key": "",
+      "variable": "Unclaimed",
+      "remark": ""
+    }
+  },
+  {
+    "type": "ifElse",
+    "config": {
+      "condition": [
+        "Unclaimed"
+      ],
+      "relation": "exist",
+      "result": "",
+      "hiddenChildren": false,
+      "children": [
+        {
+          "type": "forElements",
+          "config": {
+            "selectorRadio": "CSS",
+            "selector": "*[aria-label*=\"2024年4月\"]",
+            "type": "innerText",
+            "key": "",
+            "variableIndex": "for_elements_index",
+            "variable": "for_elements_item",
+            "remark": "",
+            "hiddenChildren": false,
+            "children": [
+              {
+                "type": "passingElement",
+                "config": {
+                  "selectorRadio": "CSS",
+                  "selector": "[aria-label*=\"2024年4月\"].unclaimed",
+                  "selectorType": "selector",
+                  "element": "",
+                  "serialType": "fixedValue",
+                  "serial": 1,
+                  "serialMin": 1,
+                  "serialMax": 50,
+                  "remark": ""
+                }
+              },
+              {
+                "type": "waitTime",
+                "config": {
+                  "timeoutType": "randomInterval",
+                  "timeout": 30000,
+                  "timeoutMin": 500,
+                  "timeoutMax": 1000,
+                  "remark": ""
+                }
+              },
+              {
+                "type": "click",
+                "config": {
+                  "selectorRadio": "CSS",
+                  "selector": "[aria-label*=\"2024年4月\"].unclaimed",
+                  "selectorType": "selector",
+                  "element": "",
+                  "serialType": "fixedValue",
+                  "serial": 1,
+                  "serialMin": 1,
+                  "serialMax": 50,
+                  "button": "left",
+                  "type": "click",
+                  "remark": ""
+                }
+              },
+              {
+                "type": "getElement",
+                "config": {
+                  "selectorRadio": "CSS",
+                  "selector": "h4.reward-collected.rainbow-text",
+                  "serial": 1,
+                  "selectorType": "selector",
+                  "serialType": "fixedValue",
+                  "serialMin": 1,
+                  "serialMax": 50,
+                  "element": "",
+                  "type": "innerText",
+                  "key": "",
+                  "variable": "RewardCollected",
+                  "remark": ""
+                }
+              },
+              {
+                "type": "ifElse",
+                "config": {
+                  "condition": [
+                    "RewardCollected"
+                  ],
+                  "relation": "exist",
+                  "result": "",
+                  "hiddenChildren": false,
+                  "children": [
+                    {
+                      "type": "passingElement",
+                      "config": {
+                        "selectorRadio": "CSS",
+                        "selector": ".icon-cross.close-btn",
+                        "selectorType": "selector",
+                        "element": "",
+                        "serialType": "fixedValue",
+                        "serial": 1,
+                        "serialMin": 1,
+                        "serialMax": 50,
+                        "remark": ""
+                      }
+                    },
+                    {
+                      "type": "waitTime",
+                      "config": {
+                        "timeoutType": "randomInterval",
+                        "timeout": 30000,
+                        "timeoutMin": 500,
+                        "timeoutMax": 1000,
+                        "remark": "",
+                        "_copyItemIndex": "0_2",
+                        "_copyItemType": ""
+                      }
+                    },
+                    {
+                      "type": "click",
+                      "config": {
+                        "selectorRadio": "CSS",
+                        "selector": ".icon-cross.close-btn",
+                        "selectorType": "selector",
+                        "element": "",
+                        "serialType": "fixedValue",
+                        "serial": 1,
+                        "serialMin": 1,
+                        "serialMax": 50,
+                        "button": "left",
+                        "type": "click",
+                        "remark": ""
+                      }
+                    }
+                  ],
+                  "remark": "",
+                  "other": [
+                    {
+                      "type": "passingElement",
+                      "config": {
+                        "selectorRadio": "CSS",
+                        "selector": "a.v-btn.v-btn--elevated.v-theme--ioBubbleTheme.v-btn--density-default.v-btn--size-default.v-btn--variant-elevated.button",
+                        "selectorType": "selector",
+                        "element": "",
+                        "serialType": "fixedValue",
+                        "serial": 1,
+                        "serialMin": 1,
+                        "serialMax": 50,
+                        "remark": "go to tweet"
+                      }
+                    },
+                    {
+                      "type": "waitTime",
+                      "config": {
+                        "timeoutType": "randomInterval",
+                        "timeout": 30000,
+                        "timeoutMin": 500,
+                        "timeoutMax": 1000,
+                        "remark": ""
+                      }
+                    },
+                    {
+                      "type": "click",
+                      "config": {
+                        "selectorRadio": "CSS",
+                        "selector": "a.v-btn.v-btn--elevated.v-theme--ioBubbleTheme.v-btn--density-default.v-btn--size-default.v-btn--variant-elevated.button",
+                        "selectorType": "selector",
+                        "element": "",
+                        "serialType": "fixedValue",
+                        "serial": 1,
+                        "serialMin": 1,
+                        "serialMax": 50,
+                        "button": "left",
+                        "type": "click",
+                        "remark": ""
+                      }
+                    },
+                    {
+                      "type": "waitTime",
+                      "config": {
+                        "timeoutType": "randomInterval",
+                        "timeout": 30000,
+                        "timeoutMin": 5000,
+                        "timeoutMax": 7000,
+                        "remark": "",
+                        "_copyItemIndex": "0_8",
+                        "_copyItemType": ""
+                      }
+                    },
+                    {
+                      "type": "waitForSelector",
+                      "config": {
+                        "selectorRadio": "CSS",
+                        "selector": "article[data-testid=\"tweet\"]",
+                        "serial": 1,
+                        "isShow": "1",
+                        "timeout": 30000,
+                        "variable": "",
+                        "remark": ""
+                      }
+                    },
+                    {
+                      "type": "scrollPage",
+                      "config": {
+                        "rangeType": "selector",
+                        "selectorRadio": "CSS",
+                        "selector": "[data-testid=\"like\"]:first-child",
+                        "serial": 1,
+                        "distance": 666,
+                        "type": "smooth",
+                        "scrollType": "pixel",
+                        "position": "bottom",
+                        "remark": ""
+                      }
+                    },
+                    {
+                      "type": "waitTime",
+                      "config": {
+                        "timeoutType": "randomInterval",
+                        "timeout": 3000,
+                        "timeoutMin": 1000,
+                        "timeoutMax": 3000,
+                        "remark": ""
+                      }
+                    },
+                    {
+                      "type": "passingElement",
+                      "config": {
+                        "selectorRadio": "CSS",
+                        "selector": "[data-testid=\"like\"]:first-child",
+                        "selectorType": "selector",
+                        "element": "",
+                        "serialType": "fixedValue",
+                        "serial": 1,
+                        "serialMin": 1,
+                        "serialMax": 50,
+                        "remark": "LIKE"
+                      }
+                    },
+                    {
+                      "type": "waitTime",
+                      "config": {
+                        "timeoutType": "randomInterval",
+                        "timeout": 30000,
+                        "timeoutMin": 500,
+                        "timeoutMax": 1000,
+                        "remark": ""
+                      }
+                    },
+                    {
+                      "type": "click",
+                      "config": {
+                        "selectorRadio": "CSS",
+                        "selector": "[data-testid=\"like\"]:first-child",
+                        "selectorType": "selector",
+                        "element": "",
+                        "serialType": "fixedValue",
+                        "serial": 1,
+                        "serialMin": 1,
+                        "serialMax": 50,
+                        "button": "left",
+                        "type": "click",
+                        "remark": ""
+                      }
+                    },
+                    {
+                      "type": "waitTime",
+                      "config": {
+                        "timeoutType": "randomInterval",
+                        "timeout": 3000,
+                        "timeoutMin": 500,
+                        "timeoutMax": 1000,
+                        "remark": "",
+                        "_copyItemIndex": "0_3",
+                        "_copyItemType": ""
+                      }
+                    },
+                    {
+                      "type": "passingElement",
+                      "config": {
+                        "selectorRadio": "CSS",
+                        "selector": "[data-testid=\"retweet\"]:first-child",
+                        "selectorType": "selector",
+                        "element": "",
+                        "serialType": "fixedValue",
+                        "serial": 1,
+                        "serialMin": 1,
+                        "serialMax": 50,
+                        "remark": "retweet"
+                      }
+                    },
+                    {
+                      "type": "waitTime",
+                      "config": {
+                        "timeoutType": "randomInterval",
+                        "timeout": 30000,
+                        "timeoutMin": 500,
+                        "timeoutMax": 1000,
+                        "remark": ""
+                      }
+                    },
+                    {
+                      "type": "click",
+                      "config": {
+                        "selectorRadio": "CSS",
+                        "selector": "[data-testid=\"retweet\"]:first-child",
+                        "selectorType": "selector",
+                        "element": "",
+                        "serialType": "fixedValue",
+                        "serial": 1,
+                        "serialMin": 1,
+                        "serialMax": 50,
+                        "button": "left",
+                        "type": "click",
+                        "remark": ""
+                      }
+                    },
+                    {
+                      "type": "waitTime",
+                      "config": {
+                        "timeoutType": "randomInterval",
+                        "timeout": 3000,
+                        "timeoutMin": 1000,
+                        "timeoutMax": 2000,
+                        "remark": "",
+                        "_copyItemIndex": "0_3",
+                        "_copyItemType": ""
+                      }
+                    },
+                    {
+                      "type": "passingElement",
+                      "config": {
+                        "selectorRadio": "CSS",
+                        "selector": "[data-testid=\"retweetConfirm\"]:first-child",
+                        "selectorType": "selector",
+                        "element": "",
+                        "serialType": "fixedValue",
+                        "serial": 1,
+                        "serialMin": 1,
+                        "serialMax": 50,
+                        "remark": ""
+                      }
+                    },
+                    {
+                      "type": "waitTime",
+                      "config": {
+                        "timeoutType": "randomInterval",
+                        "timeout": 1000,
+                        "timeoutMin": 1000,
+                        "timeoutMax": 2000,
+                        "remark": ""
+                      }
+                    },
+                    {
+                      "type": "click",
+                      "config": {
+                        "selectorRadio": "CSS",
+                        "selector": "[data-testid=\"retweetConfirm\"]:first-child",
+                        "selectorType": "selector",
+                        "element": "",
+                        "serialType": "fixedValue",
+                        "serial": 1,
+                        "serialMin": 1,
+                        "serialMax": 50,
+                        "button": "left",
+                        "type": "click",
+                        "remark": ""
+                      }
+                    },
+                    {
+                      "type": "waitTime",
+                      "config": {
+                        "timeoutType": "randomInterval",
+                        "timeout": 3000,
+                        "timeoutMin": 1000,
+                        "timeoutMax": 2000,
+                        "remark": "",
+                        "_copyItemIndex": "0_6",
+                        "_copyItemType": ""
+                      }
+                    },
+                    {
+                      "type": "passingElement",
+                      "config": {
+                        "selectorRadio": "CSS",
+                        "selector": "[data-testid=\"reply\"]:first-of-type",
+                        "selectorType": "selector",
+                        "element": "",
+                        "serialType": "fixedValue",
+                        "serial": 1,
+                        "serialMin": 1,
+                        "serialMax": 50,
+                        "remark": "reply"
+                      }
+                    },
+                    {
+                      "type": "waitTime",
+                      "config": {
+                        "timeoutType": "randomInterval",
+                        "timeout": 10000,
+                        "timeoutMin": 500,
+                        "timeoutMax": 1000,
+                        "remark": "",
+                        "_copyItemIndex": "0_13",
+                        "_copyItemType": ""
+                      }
+                    },
+                    {
+                      "type": "click",
+                      "config": {
+                        "selectorRadio": "CSS",
+                        "selector": "[data-testid=\"reply\"]:first-of-type",
+                        "selectorType": "selector",
+                        "element": "",
+                        "serialType": "fixedValue",
+                        "serial": 1,
+                        "serialMin": 1,
+                        "serialMax": 50,
+                        "button": "left",
+                        "type": "click",
+                        "remark": ""
+                      }
+                    },
+                    {
+                      "type": "waitTime",
+                      "config": {
+                        "timeoutType": "randomInterval",
+                        "timeout": 10000,
+                        "timeoutMin": 500,
+                        "timeoutMax": 1000,
+                        "remark": "",
+                        "_copyItemIndex": "0_13",
+                        "_copyItemType": ""
+                      }
+                    },
+                    {
+                      "type": "inputContent",
+                      "config": {
+                        "selectorRadio": "CSS",
+                        "selector": "[data-testid=\"tweetTextarea_0\"]:first-of-type",
+                        "serialType": "fixedValue",
+                        "selectorType": "selector",
+                        "element": "",
+                        "serial": 1,
+                        "serialMin": 1,
+                        "serialMax": 50,
+                        "intervals": 100,
+                        "content": "Absolutely thrilled for the $BUBBLE launch! ✨🚀🎉",
+                        "isRandom": "1",
+                        "randomContent": "Absolutely thrilled for the $BUBBLE launch! ✨🚀🎉\r\nSign me up for the $BUBBLE adventure! 🌈🎨✨\r\nReady to dive into the world of $BUBBLE and spread joy! 🚀🌟🎈\r\nCan't wait to explore the Imaginary World with $BUBBLE! 🌟🚀🎨\r\nJoining the $BUBBLE revolution with enthusiasm! 🌈🌟🎉\r\nThrilled to be part of the $BUBBLE community! ✨🎈🚀\r\nThe anticipation for the $BUBBLE launch is palpable! 🚀🎉✨\r\nReady to embrace the magic of $BUBBLE !  🌈✨🚀\r\nFeeling the excitement building up as we approach the $BUBBLE launch! 🚀🌟🎉\r\nBubbling with anticipation for the $BUBBLE launch! 🌟🚀🎉\r\nCount me in! Can't wait for the $BUBBLE launch! 🚀🌈✨\r\nReady to dive deep into the world of $BUBBLE ! 🌊🚀🌟\r\nExcitement levels are off the charts for the upcoming $BUBBLE launch! 🎉🚀🌈\r\nThrilled to be part of the $BUBBLE community! ✨🌟🚀\r\nCan't wait to see what the future holds with $BUBBLE! 💭🚀🌟\r\nIt's time to ignite our creativity with $BUBBLE! Let's light up the Imaginary World! 💡🎨🚀\r\nSo excited to be part of the $BUBBLE movement! Let's spread joy and positivity! 🌟🌈🎉\r\nThe countdown to the $BUBBLE launch has begun! Let's make it an unforgettable experience! ⏳🚀🌟\r\nReady to soar to new heights with $BUBBLE! Let's make waves together! 🌊🚀🌟\r\nLet's embrace the spirit of adventure with $BUBBLE! The journey awaits! 🌈✨🚀\r\nExciting times ahead! Can't wait for the launch of $BUBBLE token by @Imaginary_Ones! Let's embark on an adventure filled with creativity and positivity! 🚀🎨✨👩‍🌾\r\nThrilled to be part of the upcoming $BUBBLE token launch by @Imaginary_Ones! Let's dive into the world of imagination and positivity together! 🌟🚀🎨👩‍🌾\r\nCounting down the days until the release of $BUBBLE token! Get ready to join the adventure with @Imaginary_Ones! Let's make every moment memorable! 🎉💫👩‍🌾\r\nCan't contain my excitement for the upcoming $BUBBLE token launch! Join me and @Imaginary_Ones in spreading positivity and creativity! Let's make magic happen! 🌈✨💖👩‍🌾\r\nThe anticipation for the $BUBBLE token launch is real! Get ready to embark on an epic journey with @Imaginary_Ones! Let's create unforgettable memories together! 🚀🌈💫👩‍🌾\r\nExciting times ahead as we await the release of $BUBBLE token by @Imaginary_Ones! Let your imagination run wild and spread positivity! Join the movement! 🌟🚀🎨👩‍🌾\r\nReady to embrace the magic of $BUBBLE token with @Imaginary_Ones! Let's make every moment count and spread joy! Join us on this incredible journey! 🌟🚀🎉👩‍🌾\r\nThrilled to be part of the $BUBBLE token launch by @Imaginary_Ones! Let's ignite our creativity and spread positivity together! Exciting adventures await! 🎨✨🚀👩‍🌾\r\nThe countdown to the $BUBBLE token launch has begun! Join me and @Imaginary_Ones on this journey filled with creativity and joy! Let's make memories together! 🚀🌈👩‍🌾\r\nCan't wait to explore the possibilities with $BUBBLE token by @Imaginary_Ones! Let's unleash our imagination and spread positivity! Exciting adventures await! 🚀🌟🎨👩‍🌾\r\nExcitement is in the air as we await the launch of $BUBBLE token by @Imaginary_Ones! Join me in spreading joy and positivity! Let's make every moment count! 🚀🌈👩‍🌾\r\nAbsolutely thrilled for the $BUBBLE launch! Let's spread some digital magic! ✨🚀🎉👩‍🌾\r\nSign me up for the $BUBBLE adventure! Can't wait to explore the Imaginary World! 🌈🎨✨👩‍🌾\r\nReady to dive into the world of $BUBBLE and spread joy! Let's make memories! 🚀🌟🎈👩‍🌾\r\nExcitement overload! Can't wait to explore the Imaginary World with $BUBBLE! 🌟🚀🎨👩‍🌾\r\nJoining the $BUBBLE revolution with enthusiasm! Let's spread positivity far and wide! 🌈",
+                        "randomInputNum": {
+                          "min": 0.1,
+                          "max": 10
+                        },
+                        "remark": ""
+                      }
+                    },
+                    {
+                      "type": "waitTime",
+                      "config": {
+                        "timeoutType": "randomInterval",
+                        "timeout": 10000,
+                        "timeoutMin": 1000,
+                        "timeoutMax": 2000,
+                        "remark": "",
+                        "_copyItemIndex": "0_15",
+                        "_copyItemType": ""
+                      }
+                    },
+                    {
+                      "type": "passingElement",
+                      "config": {
+                        "selectorRadio": "CSS",
+                        "selector": "[data-testid=\"tweetButtonInline\"], [data-testid=\"tweetButton\"]",
+                        "selectorType": "selector",
+                        "element": "",
+                        "serialType": "fixedValue",
+                        "serial": 1,
+                        "serialMin": 1,
+                        "serialMax": 50,
+                        "remark": "post"
+                      }
+                    },
+                    {
+                      "type": "waitTime",
+                      "config": {
+                        "timeoutType": "randomInterval",
+                        "timeout": 10000,
+                        "timeoutMin": 500,
+                        "timeoutMax": 1000,
+                        "remark": "",
+                        "_copyItemIndex": "0_15",
+                        "_copyItemType": ""
+                      }
+                    },
+                    {
+                      "type": "click",
+                      "config": {
+                        "selectorRadio": "CSS",
+                        "selector": "[data-testid=\"tweetButtonInline\"], [data-testid=\"tweetButton\"]",
+                        "selectorType": "selector",
+                        "element": "",
+                        "serialType": "fixedValue",
+                        "serial": 1,
+                        "serialMin": 1,
+                        "serialMax": 50,
+                        "button": "left",
+                        "type": "click",
+                        "remark": ""
+                      }
+                    },
+                    {
+                      "type": "waitTime",
+                      "config": {
+                        "timeoutType": "randomInterval",
+                        "timeout": 10000,
+                        "timeoutMin": 1000,
+                        "timeoutMax": 2000,
+                        "remark": "",
+                        "_copyItemIndex": "0_17",
+                        "_copyItemType": ""
+                      }
+                    },
+                    {
+                      "type": "scrollPage",
+                      "config": {
+                        "rangeType": "selector",
+                        "selectorRadio": "CSS",
+                        "selector": "[data-testid=\"like\"]:first-child",
+                        "serial": 1,
+                        "distance": 0,
+                        "type": "smooth",
+                        "scrollType": "position",
+                        "position": "top",
+                        "remark": ""
+                      }
+                    },
+                    {
+                      "type": "waitTime",
+                      "config": {
+                        "timeoutType": "randomInterval",
+                        "timeout": 1000,
+                        "timeoutMin": 1000,
+                        "timeoutMax": 2000,
+                        "remark": ""
+                      }
+                    },
+                    {
+                      "type": "closePage",
+                      "config": {}
+                    },
+                    {
+                      "type": "waitTime",
+                      "config": {
+                        "timeoutType": "randomInterval",
+                        "timeout": 30000,
+                        "timeoutMin": 1000,
+                        "timeoutMax": 2000,
+                        "remark": ""
+                      }
+                    },
+                    {
+                      "type": "passingElement",
+                      "config": {
+                        "selectorRadio": "CSS",
+                        "selector": ".v-btn.v-btn--elevated.v-theme--ioBubbleTheme.v-btn--density-default.v-btn--size-default.v-btn--variant-elevated.button:nth-child(2)",
+                        "selectorType": "selector",
+                        "element": "",
+                        "serialType": "fixedValue",
+                        "serial": 1,
+                        "serialMin": 1,
+                        "serialMax": 50,
+                        "remark": "claim rewards"
+                      }
+                    },
+                    {
+                      "type": "waitTime",
+                      "config": {
+                        "timeoutType": "randomInterval",
+                        "timeout": 30000,
+                        "timeoutMin": 500,
+                        "timeoutMax": 1000,
+                        "remark": ""
+                      }
+                    },
+                    {
+                      "type": "click",
+                      "config": {
+                        "selectorRadio": "CSS",
+                        "selector": ".v-btn.v-btn--elevated.v-theme--ioBubbleTheme.v-btn--density-default.v-btn--size-default.v-btn--variant-elevated.button:nth-child(2)",
+                        "selectorType": "selector",
+                        "element": "",
+                        "serialType": "fixedValue",
+                        "serial": 1,
+                        "serialMin": 1,
+                        "serialMax": 50,
+                        "button": "left",
+                        "type": "click",
+                        "remark": ""
+                      }
+                    },
+                    {
+                      "type": "waitTime",
+                      "config": {
+                        "timeoutType": "randomInterval",
+                        "timeout": 30000,
+                        "timeoutMin": 5000,
+                        "timeoutMax": 7000,
+                        "remark": ""
+                      }
+                    },
+                    {
+                      "type": "passingElement",
+                      "config": {
+                        "selectorRadio": "CSS",
+                        "selector": "body > div.v-overlay-container > div.v-overlay.v-overlay--active.v-theme--ioBubbleTheme.v-locale--is-ltr.v-dialog.tweet-modal.v-overlay--scroll-blocked > div.v-overlay__content > div > button > span.v-btn__content",
+                        "selectorType": "selector",
+                        "element": "",
+                        "serialType": "fixedValue",
+                        "serial": 1,
+                        "serialMin": 1,
+                        "serialMax": 50,
+                        "remark": "back to dash"
+                      }
+                    },
+                    {
+                      "type": "waitTime",
+                      "config": {
+                        "timeoutType": "randomInterval",
+                        "timeout": 30000,
+                        "timeoutMin": 500,
+                        "timeoutMax": 1000,
+                        "remark": ""
+                      }
+                    },
+                    {
+                      "type": "click",
+                      "config": {
+                        "selectorRadio": "CSS",
+                        "selector": "body > div.v-overlay-container > div.v-overlay.v-overlay--active.v-theme--ioBubbleTheme.v-locale--is-ltr.v-dialog.tweet-modal.v-overlay--scroll-blocked > div.v-overlay__content > div > button > span.v-btn__content",
+                        "selectorType": "selector",
+                        "element": "",
+                        "serialType": "fixedValue",
+                        "serial": 1,
+                        "serialMin": 1,
+                        "serialMax": 50,
+                        "button": "left",
+                        "type": "click",
+                        "remark": ""
+                      }
+                    }
+                  ],
+                  "_copyItemIndex": "0_59",
+                  "_copyItemType": ""
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remark": "",
+      "other": [
+        {
+          "type": "waitTime",
+          "config": {
+            "timeoutType": "randomInterval",
+            "timeout": 5000,
+            "timeoutMin": 3000,
+            "timeoutMax": 5000,
+            "remark": ""
+          }
+        },
+        {
+          "type": "scrollPage",
+          "config": {
+            "rangeType": "window",
+            "selectorRadio": "CSS",
+            "selector": "",
+            "serial": 1,
+            "distance": 0,
+            "type": "smooth",
+            "scrollType": "position",
+            "position": "bottom",
+            "remark": ""
+          }
+        },
+        {
+          "type": "screenshotPage",
+          "config": {
+            "name": "${serial_number}+${task_id}",
+            "path": "",
+            "url": "/Users/justinfu/Desktop/RPA-BUBBLE",
+            "quality": 50,
+            "format": "png",
+            "fullPage": "0",
+            "remark": "",
+            "type": "folder"
+          }
+        },
+        {
+          "type": "waitTime",
+          "config": {
+            "timeoutType": "randomInterval",
+            "timeout": 2000,
+            "timeoutMin": 1000,
+            "timeoutMax": 2000,
+            "remark": ""
+          }
+        },
+        {
+          "type": "closeOtherPage",
+          "config": {}
+        },
+        {
+          "type": "closePage",
+          "config": {}
+        }
+      ]
+    }
+  }
+]
