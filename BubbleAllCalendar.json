@@ -111,7 +111,7 @@
     "type": "getElement",
     "config": {
       "selectorRadio": "CSS",
-      "selector": "[aria-label*=\"2024年4月\"].unclaimed",
+      "selector": "[aria-label*=\"2024年4月\"].unclaimed, [aria-label*=\"Apr\"].unclaimed",
       "serial": 1,
       "selectorType": "selector",
       "serialType": "fixedValue",
@@ -138,7 +138,7 @@
           "type": "forElements",
           "config": {
             "selectorRadio": "CSS",
-            "selector": "*[aria-label*=\"2024年4月\"]",
+            "selector": "[aria-label*=\"2024年4月\"].unclaimed, [aria-label*=\"Apr\"].unclaimed",
             "type": "innerText",
             "key": "",
             "variableIndex": "for_elements_index",
@@ -150,7 +150,7 @@
                 "type": "passingElement",
                 "config": {
                   "selectorRadio": "CSS",
-                  "selector": "[aria-label*=\"2024年4月\"].unclaimed",
+                  "selector": "[aria-label*=\"2024年4月\"].unclaimed, [aria-label*=\"Apr\"].unclaimed",
                   "selectorType": "selector",
                   "element": "",
                   "serialType": "fixedValue",
@@ -174,7 +174,7 @@
                 "type": "click",
                 "config": {
                   "selectorRadio": "CSS",
-                  "selector": "[aria-label*=\"2024年4月\"].unclaimed",
+                  "selector": "[aria-label*=\"2024年4月\"].unclaimed, [aria-label*=\"Apr\"].unclaimed",
                   "selectorType": "selector",
                   "element": "",
                   "serialType": "fixedValue",
@@ -773,10 +773,27 @@
                       }
                     },
                     {
+                      "type": "getElement",
+                      "config": {
+                        "selectorRadio": "CSS",
+                        "selector": "[aria-label*=\"2024年4月\"].unclaimed,  [aria-label*=\"Apr\"].unclaimed",
+                        "serial": 1,
+                        "selectorType": "selector",
+                        "serialType": "fixedValue",
+                        "serialMin": 1,
+                        "serialMax": 50,
+                        "element": "",
+                        "type": "object",
+                        "key": "",
+                        "variable": "CheckUnclaimed",
+                        "remark": ""
+                      }
+                    },
+                    {
                       "type": "ifElse",
                       "config": {
                         "condition": [
-                          "Unclaimed"
+                          "CheckUnclaimed"
                         ],
                         "relation": "notExist",
                         "result": "false",
