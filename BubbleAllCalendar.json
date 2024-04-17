@@ -736,7 +736,7 @@
                       "type": "passingElement",
                       "config": {
                         "selectorRadio": "CSS",
-                        "selector": "body > div.v-overlay-container > div.v-overlay.v-overlay--active.v-theme--ioBubbleTheme.v-locale--is-ltr.v-dialog.tweet-modal.v-overlay--scroll-blocked > div.v-overlay__content > div > button > span.v-btn__content",
+                        "selector": ".icon-cross.close-btn",
                         "selectorType": "selector",
                         "element": "",
                         "serialType": "fixedValue",
@@ -760,7 +760,7 @@
                       "type": "click",
                       "config": {
                         "selectorRadio": "CSS",
-                        "selector": "body > div.v-overlay-container > div.v-overlay.v-overlay--active.v-theme--ioBubbleTheme.v-locale--is-ltr.v-dialog.tweet-modal.v-overlay--scroll-blocked > div.v-overlay__content > div > button > span.v-btn__content",
+                        "selector": ".icon-cross.close-btn",
                         "selectorType": "selector",
                         "element": "",
                         "serialType": "fixedValue",
@@ -769,6 +769,93 @@
                         "serialMax": 50,
                         "button": "left",
                         "type": "click",
+                        "remark": ""
+                      }
+                    },
+                    {
+                      "type": "ifElse",
+                      "config": {
+                        "condition": [
+                          "Unclaimed"
+                        ],
+                        "relation": "notExist",
+                        "result": "false",
+                        "hiddenChildren": false,
+                        "children": [
+                          {
+                            "type": "waitTime",
+                            "config": {
+                              "timeoutType": "randomInterval",
+                              "timeout": 5000,
+                              "timeoutMin": 2000,
+                              "timeoutMax": 3000,
+                              "remark": "",
+                              "_copyItemIndex": "0_11_0",
+                              "_copyItemType": "other_other"
+                            }
+                          },
+                          {
+                            "type": "scrollPage",
+                            "config": {
+                              "rangeType": "window",
+                              "selectorRadio": "CSS",
+                              "selector": "",
+                              "serial": 1,
+                              "distance": 0,
+                              "type": "smooth",
+                              "scrollType": "position",
+                              "position": "bottom",
+                              "remark": "",
+                              "_copyItemIndex": "0_11_1",
+                              "_copyItemType": "other_other"
+                            }
+                          },
+                          {
+                            "type": "screenshotPage",
+                            "config": {
+                              "name": "${serial_number}+${task_id}",
+                              "path": "",
+                              "url": "/Users/justinfu/Desktop/RPA-BUBBLE",
+                              "quality": 50,
+                              "format": "png",
+                              "fullPage": "0",
+                              "remark": "",
+                              "type": "folder",
+                              "_copyItemIndex": "0_11_2",
+                              "_copyItemType": "other_other"
+                            }
+                          },
+                          {
+                            "type": "waitTime",
+                            "config": {
+                              "timeoutType": "randomInterval",
+                              "timeout": 30000,
+                              "timeoutMin": 500,
+                              "timeoutMax": 1000,
+                              "remark": ""
+                            }
+                          },
+                          {
+                            "type": "closeOtherPage",
+                            "config": {}
+                          },
+                          {
+                            "type": "waitTime",
+                            "config": {
+                              "timeoutType": "randomInterval",
+                              "timeout": 30000,
+                              "timeoutMin": 500,
+                              "timeoutMax": 1000,
+                              "remark": "",
+                              "_copyItemIndex": "0_11_0_4_40_3",
+                              "_copyItemType": "children_children_other_children_children"
+                            }
+                          },
+                          {
+                            "type": "closePage",
+                            "config": {}
+                          }
+                        ],
                         "remark": ""
                       }
                     }
@@ -788,8 +875,8 @@
           "config": {
             "timeoutType": "randomInterval",
             "timeout": 5000,
-            "timeoutMin": 3000,
-            "timeoutMax": 5000,
+            "timeoutMin": 2000,
+            "timeoutMax": 3000,
             "remark": ""
           }
         },
@@ -833,6 +920,18 @@
         {
           "type": "closeOtherPage",
           "config": {}
+        },
+        {
+          "type": "waitTime",
+          "config": {
+            "timeoutType": "randomInterval",
+            "timeout": 30000,
+            "timeoutMin": 500,
+            "timeoutMax": 1000,
+            "remark": "",
+            "_copyItemIndex": "0_11_0_4_40_5",
+            "_copyItemType": "children_children_other_children_children"
+          }
         },
         {
           "type": "closePage",
