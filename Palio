@@ -1,0 +1,907 @@
+[
+  {
+    "type": "newPage",
+    "config": {}
+  },
+  {
+    "type": "gotoUrl",
+    "config": {
+      "url": "https://xter.io/activities/palio",
+      "timeout": 30000,
+      "remark": ""
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 500,
+      "timeoutMin": 10000,
+      "timeoutMax": 12000,
+      "remark": "",
+      "_copyItemIndex": "0_8",
+      "_copyItemType": ""
+    }
+  },
+  {
+    "type": "passingElement",
+    "config": {
+      "selectorRadio": "CSS",
+      "selector": "#palio_connect",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "remark": "wallet connect"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 500,
+      "timeoutMax": 1000,
+      "remark": ""
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "CSS",
+      "selector": "#palio_connect",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": ""
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 3000,
+      "timeoutMax": 5000,
+      "remark": ""
+    }
+  },
+  {
+    "type": "passingElement",
+    "config": {
+      "selectorRadio": "CSS",
+      "selector": "#chakra-modal-\\:r1\\: > div > div > div:nth-child(1) > div > div",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "remark": "choose wallet"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 500,
+      "timeoutMax": 1000,
+      "remark": ""
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "CSS",
+      "selector": "#chakra-modal-\\:r1\\: > div > div > div:nth-child(1) > div > div",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": ""
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 1000,
+      "timeoutMax": 3000,
+      "remark": ""
+    }
+  },
+  {
+    "type": "passingElement",
+    "config": {
+      "selectorRadio": "CSS",
+      "selector": "#password",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "remark": ""
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 500,
+      "timeoutMax": 1000,
+      "remark": ""
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "CSS",
+      "selector": "#password",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": ""
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 500,
+      "timeoutMax": 1000,
+      "remark": ""
+    }
+  },
+  {
+    "type": "inputContent",
+    "config": {
+      "selectorRadio": "CSS",
+      "selector": "#password",
+      "serialType": "fixedValue",
+      "selectorType": "selector",
+      "element": "",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "intervals": 100,
+      "content": "xxx",
+      "isRandom": "1",
+      "randomContent": "xxx",
+      "randomInputNum": {
+        "min": 0.1,
+        "max": 10
+      },
+      "remark": ""
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 500,
+      "timeoutMax": 1000,
+      "remark": ""
+    }
+  },
+  {
+    "type": "keyboard",
+    "config": {
+      "type": "Enter",
+      "remark": "login"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 3000,
+      "timeoutMax": 6000,
+      "remark": ""
+    }
+  },
+  {
+    "type": "switchPage",
+    "config": {
+      "type": "url",
+      "relation": "contain",
+      "content": "palio",
+      "remark": ""
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 169,
+      "type": "smooth",
+      "scrollType": "pixel",
+      "position": "bottom",
+      "remark": ""
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 500,
+      "timeoutMin": 500,
+      "timeoutMax": 1000,
+      "remark": "",
+      "_copyItemIndex": "0_10",
+      "_copyItemType": ""
+    }
+  },
+  {
+    "type": "passingElement",
+    "config": {
+      "selectorRadio": "CSS",
+      "selector": "#global_layout > section > div > main > section.w-\\[1024px\\].mt-\\[104px\\].mx-auto.font-poppins.text-x-xs.text-xwhite.relative.rounded-3xl.pb-\\[60px\\].components_card-bg__pY6GK > div.pt-5.relative > div.pl-\\[262px\\].pr-\\[281px\\].h-\\[530px\\].mx-auto.mt-2.relative > ul > li:nth-child(1) > button > span",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "remark": "apple"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 300,
+      "timeoutMax": 500,
+      "remark": ""
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "CSS",
+      "selector": "#global_layout > section > div > main > section.w-\\[1024px\\].mt-\\[104px\\].mx-auto.font-poppins.text-x-xs.text-xwhite.relative.rounded-3xl.pb-\\[60px\\].components_card-bg__pY6GK > div.pt-5.relative > div.pl-\\[262px\\].pr-\\[281px\\].h-\\[530px\\].mx-auto.mt-2.relative > ul > li:nth-child(1) > button > span",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": ""
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 500,
+      "timeoutMin": 400,
+      "timeoutMax": 600,
+      "remark": "",
+      "_copyItemIndex": "0_6",
+      "_copyItemType": ""
+    }
+  },
+  {
+    "type": "passingElement",
+    "config": {
+      "selectorRadio": "CSS",
+      "selector": "#global_layout > section > div > main > section.w-\\[1024px\\].mt-\\[104px\\].mx-auto.font-poppins.text-x-xs.text-xwhite.relative.rounded-3xl.pb-\\[60px\\].components_card-bg__pY6GK > div.pt-5.relative > div.pl-\\[262px\\].pr-\\[281px\\].h-\\[530px\\].mx-auto.mt-2.relative > ul > li:nth-child(2) > button > span",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "remark": "duck"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 300,
+      "timeoutMax": 500,
+      "remark": "",
+      "_copyItemIndex": "0_23",
+      "_copyItemType": ""
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "CSS",
+      "selector": "#global_layout > section > div > main > section.w-\\[1024px\\].mt-\\[104px\\].mx-auto.font-poppins.text-x-xs.text-xwhite.relative.rounded-3xl.pb-\\[60px\\].components_card-bg__pY6GK > div.pt-5.relative > div.pl-\\[262px\\].pr-\\[281px\\].h-\\[530px\\].mx-auto.mt-2.relative > ul > li:nth-child(2) > button > span",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "",
+      "_copyItemIndex": "0_15",
+      "_copyItemType": ""
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 500,
+      "timeoutMin": 400,
+      "timeoutMax": 600,
+      "remark": "",
+      "_copyItemIndex": "0_18",
+      "_copyItemType": ""
+    }
+  },
+  {
+    "type": "passingElement",
+    "config": {
+      "selectorRadio": "CSS",
+      "selector": "#global_layout > section > div > main > section.w-\\[1024px\\].mt-\\[104px\\].mx-auto.font-poppins.text-x-xs.text-xwhite.relative.rounded-3xl.pb-\\[60px\\].components_card-bg__pY6GK > div.pt-5.relative > div.pl-\\[262px\\].pr-\\[281px\\].h-\\[530px\\].mx-auto.mt-2.relative > ul > li:nth-child(3) > button > span",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "remark": "CD",
+      "_copyItemIndex": "0_17",
+      "_copyItemType": ""
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 300,
+      "timeoutMax": 500,
+      "remark": "",
+      "_copyItemIndex": "0_27",
+      "_copyItemType": ""
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "CSS",
+      "selector": "#global_layout > section > div > main > section.w-\\[1024px\\].mt-\\[104px\\].mx-auto.font-poppins.text-x-xs.text-xwhite.relative.rounded-3xl.pb-\\[60px\\].components_card-bg__pY6GK > div.pt-5.relative > div.pl-\\[262px\\].pr-\\[281px\\].h-\\[530px\\].mx-auto.mt-2.relative > ul > li:nth-child(3) > button > span",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": ""
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 3000,
+      "timeoutMax": 5000,
+      "remark": ""
+    }
+  },
+  {
+    "type": "forTimes",
+    "config": {
+      "times": 5,
+      "variableIndex": "for_times_index",
+      "remark": "",
+      "hiddenChildren": false,
+      "children": [
+        {
+          "type": "passingElement",
+          "config": {
+            "selectorRadio": "CSS",
+            "selector": "[data-testid=\"page-container-footer-next\"]",
+            "selectorType": "selector",
+            "element": "",
+            "serialType": "fixedValue",
+            "serial": 1,
+            "serialMin": 1,
+            "serialMax": 50,
+            "remark": ""
+          }
+        },
+        {
+          "type": "waitTime",
+          "config": {
+            "timeoutType": "randomInterval",
+            "timeout": 30000,
+            "timeoutMin": 200,
+            "timeoutMax": 500,
+            "remark": ""
+          }
+        },
+        {
+          "type": "click",
+          "config": {
+            "selectorRadio": "CSS",
+            "selector": "[data-testid=\"page-container-footer-next\"]",
+            "selectorType": "selector",
+            "element": "",
+            "serialType": "fixedValue",
+            "serial": 1,
+            "serialMin": 1,
+            "serialMax": 50,
+            "button": "left",
+            "type": "click",
+            "remark": ""
+          }
+        },
+        {
+          "type": "waitTime",
+          "config": {
+            "timeoutType": "randomInterval",
+            "timeout": 30000,
+            "timeoutMin": 1500,
+            "timeoutMax": 3500,
+            "remark": ""
+          }
+        }
+      ]
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 3000,
+      "timeoutMax": 6000,
+      "remark": "",
+      "_copyItemIndex": "0_36",
+      "_copyItemType": ""
+    }
+  },
+  {
+    "type": "switchPage",
+    "config": {
+      "type": "url",
+      "relation": "contain",
+      "content": "palio",
+      "remark": ""
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 16999,
+      "timeoutMax": 20666,
+      "remark": ""
+    }
+  },
+  {
+    "type": "refreshPage",
+    "config": {
+      "timeout": 30000,
+      "remark": ""
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 6000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": ""
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 269,
+      "type": "smooth",
+      "scrollType": "pixel",
+      "position": "bottom",
+      "remark": ""
+    }
+  },
+  {
+    "type": "passingElement",
+    "config": {
+      "selectorRadio": "CSS",
+      "selector": "#palio_feed_1",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "remark": "apple"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 500,
+      "timeoutMax": 1000,
+      "remark": ""
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "CSS",
+      "selector": "#palio_feed_1",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": ""
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 1000,
+      "timeoutMax": 2000,
+      "remark": "",
+      "_copyItemIndex": "0_25",
+      "_copyItemType": ""
+    }
+  },
+  {
+    "type": "passingElement",
+    "config": {
+      "selectorRadio": "CSS",
+      "selector": "#palio_feed_2",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "remark": "duck",
+      "_copyItemIndex": "0_24",
+      "_copyItemType": ""
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 500,
+      "timeoutMax": 1000,
+      "remark": "",
+      "_copyItemIndex": "0_25",
+      "_copyItemType": ""
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "CSS",
+      "selector": "#palio_feed_2",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": ""
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 1000,
+      "timeoutMax": 2000,
+      "remark": "",
+      "_copyItemIndex": "0_29",
+      "_copyItemType": ""
+    }
+  },
+  {
+    "type": "passingElement",
+    "config": {
+      "selectorRadio": "CSS",
+      "selector": "#palio_feed_3",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "remark": "cd"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 500,
+      "timeoutMax": 1000,
+      "remark": "",
+      "_copyItemIndex": "0_31",
+      "_copyItemType": ""
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "CSS",
+      "selector": "#palio_feed_3",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": ""
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 1000,
+      "timeoutMax": 3000,
+      "remark": "",
+      "_copyItemIndex": "0_33",
+      "_copyItemType": ""
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 800,
+      "type": "smooth",
+      "scrollType": "pixel",
+      "position": "bottom",
+      "remark": "To Chat"
+    }
+  },
+  {
+    "type": "getElement",
+    "config": {
+      "selectorRadio": "CSS",
+      "selector": "textarea[placeholder=\"Send message to your Palio！\"]",
+      "serial": 1,
+      "selectorType": "selector",
+      "serialType": "fixedValue",
+      "serialMin": 1,
+      "serialMax": 50,
+      "element": "",
+      "type": "object",
+      "key": "",
+      "variable": "chatBox",
+      "remark": "chatbox"
+    }
+  },
+  {
+    "type": "ifElse",
+    "config": {
+      "condition": [
+        "chatBox"
+      ],
+      "relation": "exist",
+      "result": "",
+      "hiddenChildren": false,
+      "children": [
+        {
+          "type": "waitTime",
+          "config": {
+            "timeoutType": "randomInterval",
+            "timeout": 30000,
+            "timeoutMin": 500,
+            "timeoutMax": 1000,
+            "remark": ""
+          }
+        },
+        {
+          "type": "screenshotPage",
+          "config": {
+            "name": "${serial_number}",
+            "path": "",
+            "url": "/Users/justinfu/Desktop/RPA-Palio",
+            "quality": 50,
+            "format": "png",
+            "fullPage": "0",
+            "remark": "",
+            "type": "folder"
+          }
+        }
+      ],
+      "remark": ""
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 1569,
+      "type": "smooth",
+      "scrollType": "pixel",
+      "position": "bottom",
+      "remark": ""
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 1000,
+      "timeoutMax": 3000,
+      "remark": "",
+      "_copyItemIndex": "0_35",
+      "_copyItemType": ""
+    }
+  },
+  {
+    "type": "passingElement",
+    "config": {
+      "selectorRadio": "CSS",
+      "selector": "#quest > div.mt-12.mx-\\[68px\\].pb-\\[96px\\].grid.grid-cols-2.gap-\\[96px\\] > div:nth-child(1) > div > div > div.w-\\[83px\\].h-\\[83px\\].flex.items-center.justify-center.cursor-pointer.absolute.top-\\[8\\%\\].-right-\\[6\\%\\] > span",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "remark": "Get daily pet"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 500,
+      "timeoutMax": 1000,
+      "remark": "",
+      "_copyItemIndex": "0_33",
+      "_copyItemType": ""
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "CSS",
+      "selector": "#quest > div.mt-12.mx-\\[68px\\].pb-\\[96px\\].grid.grid-cols-2.gap-\\[96px\\] > div:nth-child(1) > div > div > div.w-\\[83px\\].h-\\[83px\\].flex.items-center.justify-center.cursor-pointer.absolute.top-\\[8\\%\\].-right-\\[6\\%\\] > span",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": ""
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 30000,
+      "timeoutMin": 2000,
+      "timeoutMax": 3000,
+      "remark": "",
+      "_copyItemIndex": "0_37",
+      "_copyItemType": ""
+    }
+  },
+  {
+    "type": "screenshotPage",
+    "config": {
+      "name": "${serial_number}+${task_name}",
+      "path": "",
+      "url": "/Users/justinfu/Desktop/RPA-Palio",
+      "quality": 50,
+      "format": "png",
+      "fullPage": "0",
+      "remark": "",
+      "type": "folder",
+      "_copyItemIndex": "0_42",
+      "_copyItemType": ""
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 1000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": ""
+    }
+  },
+  {
+    "type": "screenshotPage",
+    "config": {
+      "name": "${serial_number}+${task_id}",
+      "path": "",
+      "url": "/Users/justinfu/Desktop/RPA-Palio",
+      "quality": 50,
+      "format": "png",
+      "fullPage": "1",
+      "remark": "",
+      "type": "folder"
+    }
+  },
+  {
+    "type": "closeOtherPage",
+    "config": {}
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "randomInterval",
+      "timeout": 5000,
+      "timeoutMin": 5000,
+      "timeoutMax": 10000,
+      "remark": ""
+    }
+  }
+]
